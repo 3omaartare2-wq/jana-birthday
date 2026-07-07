@@ -594,4 +594,96 @@ transform:translateY(0);
     transform:scale(1.08);
 
 }
+/* ========================= */
+/* LOCK SCREEN */
+/* ========================= */
+
+#lockScreen{
+    position:fixed;
+    inset:0;
+    z-index:99999;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:
+    radial-gradient(circle at top,#731919 0%,transparent 35%),
+    radial-gradient(circle at bottom,#320707 0%,transparent 45%),
+    #090909;
+
+    color:white;
+    padding:30px;
+}
+
+#lockScreen h1{
+    font-size:52px;
+    margin-bottom:15px;
+}
+
+#lockScreen h2{
+    color:#ff5b7f;
+    margin-bottom:25px;
+}
+
+#countdown{
+
+    font-size:34px;
+    font-weight:bold;
+
+    margin:25px 0;
+
+    color:#ffd5d5;
+
+}
+
+#lockBtn{
+
+    background:#c40038;
+
+    color:white;
+
+    border:none;
+
+    border-radius:50px;
+
+    padding:18px 45px;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+#lockBtn:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 25px rgba(255,0,80,.5);
+
+}
+
+#lockMessage{
+
+    margin-top:30px;
+
+    font-size:20px;
+
+    color:#ffe5e5;
+
+    min-height:35px;
+
+    transition:.4s;
+
+}
+
+#websiteContent{
+
+    display:none;
+
+}
 }
