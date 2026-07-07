@@ -59,7 +59,7 @@ function updateCountdown(){
 
     const seconds = Math.floor(diff / 1000) % 60;
 
-    countdown.innerHTML = ${days}d ${hours}h ${minutes}m ${seconds}s;
+    countdown.innerHTML = `(${days}d ${hours}h ${minutes}m ${seconds}s)`;
 
 }
 
