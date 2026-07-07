@@ -146,3 +146,93 @@ letterBtn.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+const letter = document.getElementById("letterBtn");
+const question = document.getElementById("finalQuestion");
+
+letter.addEventListener("click",()=>{
+
+    setTimeout(()=>{
+
+        question.classList.remove("hidden");
+
+    },1500);
+
+});
+
+const answerBtns = document.querySelectorAll(".answerBtn");
+
+answerBtns.forEach(btn => {
+
+    btn.addEventListener("click", () => {
+
+        document.getElementById("finalQuestion").innerHTML = `
+            <h2 style="color:#ff6b6b;">
+                ❤️ Mission Accomplished ❤️
+            </h2>
+
+            <p style="margin-top:20px;font-size:20px;">
+                Happy Birthday,<br>
+                Y Rooooooby ❤️
+            </p>
+        `;
+
+        celebrate();
+
+    });
+
+});
+
+function celebrate(){
+
+    // الكونفيتي من فوق
+    confetti({
+
+        particleCount:180,
+
+        spread:90,
+
+        origin:{y:.6}
+
+    });
+
+    // ألعاب نارية من اليمين والشمال
+
+    const duration = 3000;
+
+    const end = Date.now() + duration;
+
+    (function frame(){
+
+        confetti({
+
+            particleCount:4,
+
+            angle:60,
+
+            spread:70,
+
+            origin:{x:0}
+
+        });
+
+        confetti({
+
+            particleCount:4,
+
+            angle:120,
+
+            spread:70,
+
+            origin:{x:1}
+
+        });
+
+        if(Date.now() < end){
+
+            requestAnimationFrame(frame);
+
+        }
+
+    })();
+
+}

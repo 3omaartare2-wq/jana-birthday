@@ -545,4 +545,53 @@ transform:translateY(0);
 
 }
 }
+/* Final Question */
+
+#finalQuestion{
+
+    margin-top:60px;
+
+    text-align:center;
+
+}
+
+.answerButtons{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.answerBtn{
+
+    background:#ff3d3d;
+
+    border:none;
+
+    padding:16px 30px;
+
+    border-radius:40px;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:17px;
+
+}
+
+.answerBtn:hover{
+
+    transform:scale(1.08);
+
+}
 }
