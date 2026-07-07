@@ -2,7 +2,7 @@
    LOCK SCREEN
 =========================== */
 
-const unlockDate = new Date("2026-07-01T00:00:00");
+const unlockDate = new Date("2026-08-01T00:00:00");
 
 const lockScreen = document.getElementById("lockScreen");
 const websiteContent = document.getElementById("websiteContent");
@@ -60,7 +60,7 @@ function updateCountdown(){
     const seconds = Math.floor(diff / 1000) % 60;
 
     countdown.innerHTML =
-    ${days}d ${hours}h ${minutes}m ${seconds}s;
+    "${days}d ${hours}h ${minutes}m ${seconds}s";
 
 }
 
