@@ -1,0 +1,548 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#090909;
+    color:#fff;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* ===========================
+   Background
+=========================== */
+
+.background{
+    position:fixed;
+    inset:0;
+    z-index:-10;
+    overflow:hidden;
+
+    background:
+    radial-gradient(circle at top,#771515 0%,transparent 35%),
+    radial-gradient(circle at bottom,#2d0505 0%,transparent 45%),
+    #090909;
+}
+
+/* ===========================
+   Stars
+=========================== */
+
+.stars{
+    position:absolute;
+    inset:0;
+
+    background-image:
+        radial-gradient(circle,rgba(255,255,255,.9) 1.5px,transparent 2px),
+        radial-gradient(circle,rgba(255,255,255,.7) 1px,transparent 2px),
+        radial-gradient(circle,rgba(255,255,255,.5) 2px,transparent 2px);
+
+    background-size:
+        170px 170px,
+        250px 250px,
+        330px 330px;
+
+    animation:twinkle 5s ease-in-out infinite;
+}
+
+@keyframes twinkle{
+
+    0%{
+        opacity:.4;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:.4;
+    }
+
+}
+
+/* ===========================
+   Container
+=========================== */
+
+.container{
+
+    width:min(90%,760px);
+
+    margin:80px auto;
+
+    padding:60px;
+
+    border-radius:28px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+    0 0 60px rgba(255,0,0,.15);
+
+}
+
+/* ===========================
+   Heart
+=========================== */
+
+.heart{
+
+    font-size:70px;
+
+    margin-bottom:25px;
+
+    animation:beat 1.3s infinite;
+
+}
+
+@keyframes beat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    30%{
+        transform:scale(1.15);
+    }
+
+    60%{
+        transform:scale(.92);
+    }
+
+}
+
+/* ===========================
+   Titles
+=========================== */
+
+h1{
+
+    font-size:55px;
+
+    font-weight:700;
+
+}
+
+h2{
+
+    margin-top:8px;
+
+    font-size:42px;
+
+    color:#ff5b5b;
+
+}
+
+p{
+
+    margin-top:18px;
+
+    color:#ddd;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+/* ===========================
+   Button
+=========================== */
+
+button{
+
+    margin-top:45px;
+
+    padding:18px 45px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#ff3d3d;
+
+    color:#fff;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 30px rgba(255,0,0,.35);
+
+}
+
+/* ===========================
+   Message
+=========================== */
+
+#message{
+
+    margin-top:35px;
+
+    text-align:left;
+
+    white-space:pre-line;
+
+    line-height:2;
+
+    font-size:20px;
+
+    min-height:350px;
+
+}
+
+.cursor{
+
+    display:inline-block;
+
+    width:2px;
+
+    height:22px;
+
+    background:#fff;
+
+    animation:blink .7s infinite;
+
+}
+
+@keyframes blink{
+
+    50%{
+        opacity:0;
+    }
+
+}
+
+/* ===========================
+   Hearts Layer
+=========================== */
+
+#hearts{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+.floating-heart{
+
+    position:fixed;
+
+    bottom:-40px;
+
+    color:#ff4040;
+
+    opacity:.85;
+
+    animation:floatUp linear forwards;
+
+    filter:drop-shadow(0 0 10px rgba(255,0,0,.5));
+
+}
+
+@keyframes floatUp{
+
+    0%{
+
+        transform:
+        translateY(0)
+        translateX(0)
+        scale(.8);
+
+        opacity:0;
+
+    }
+
+    15%{
+
+        opacity:.9;
+
+    }
+
+    100%{
+
+        transform:
+        translateY(-120vh)
+        translateX(var(--drift))
+        scale(1.4);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#ff3d3d;
+
+    border-radius:20px;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+.container{
+
+    padding:35px 25px;
+
+    margin:40px auto;
+
+}
+
+h1{
+
+    font-size:38px;
+
+}
+
+h2{
+
+    font-size:30px;
+
+}
+
+#message{
+
+    font-size:18px;
+
+}
+
+button{
+
+    width:100%;
+
+}
+
+/* ===========================
+   Intro Screen
+=========================== */
+
+#intro{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#090909;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+    transition:1s;
+
+}
+
+.intro-heart{
+
+    font-size:90px;
+
+    animation:introBeat 1.2s infinite;
+
+}
+
+@keyframes introBeat{
+
+0%,100%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.2);
+
+}
+
+}
+
+#intro.hide{
+
+opacity:0;
+
+visibility:hidden;
+
+}
+
+/* Jana Glow */
+
+.container h1{
+
+    animation: glow 2.5s ease-in-out infinite;
+
+}
+
+@keyframes glow{
+
+    0%,100%{
+
+        text-shadow:
+        0 0 10px rgba(255,80,80,.3);
+
+    }
+
+    50%{
+
+        text-shadow:
+        0 0 15px rgba(255,70,70,.7),
+        0 0 30px rgba(255,40,40,.5);
+
+    }
+
+}
+/* Secret Letter */
+
+.hidden{
+    display:none;
+}
+
+#secretLetter{
+
+    margin-top:60px;
+
+    text-align:center;
+
+}
+
+#letterBtn{
+
+    background:#b3002d;
+
+    padding:16px 35px;
+
+    border:none;
+
+    border-radius:40px;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#letterBtn:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 25px rgba(255,0,80,.5);
+
+}
+
+#letterCard{
+
+    display:none;
+
+    margin-top:30px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    animation:fadeLetter .8s;
+
+}
+
+#letterCard h2{
+
+    color:#ff5b7f;
+
+    margin-bottom:20px;
+
+}
+
+#letterCard p{
+
+    text-align:center;
+
+    line-height:2;
+
+}
+
+@keyframes fadeLetter{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+}
+}
