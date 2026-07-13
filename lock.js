@@ -12,18 +12,18 @@ Enharda yo3tabr awl 3eed milad leeke w e7na m3a b3d.
 
 Insha'allah msh hayb2a akhr 3eed milad oltehalk.
 
-Oltehalk mra w b2olhalk delwa2te...
-Msh hat3rafe tekhlase mne y Jana y Roooooby 😏
-
 Yarab tkon el presents 3agbtk y Jana.
 
 Yarab akon fe 7osn zank kda.
 
 Ana b7bk w b7b kol haga feeke.
+3neeke , de7ktk , zka2k , 7lawtk , w kol haga 
 
 Enharda sa7 your special day...
 
 Bas ente btkhale kol youm fe hiate special bwgodk feeh ❤️
+
+ta3deel : wl website da ana 3amloh mn abl m t2olele ennek msh hainfa3 tekalmene tane khals bs ana kan lazm ab3atoh 
 
 With Love ❤️
 
