@@ -26,7 +26,8 @@ Bas ente btkhale kol youm fe hiate special bwgodk feeh ❤️
 ah w haga kman ana klmt babaia alashan w olteloh ene b7bk w 3awzk w hwa wafe2 ene akhtobk f el emtyaz 
 alashan ente konte 2al2ana bs faaaaaa mate2la2eesh 
 
-ta3deel : wl website da ana 3amloh mn abl m t2olele ennek msh hainfa3 tekalmene tane khals bs ana kan lazm ab3atoh 
+ta3deel : ana kont hamsa7 kol haga fe el website da bs ana mkdbtsh f ay haga mn elle katabtaha ama ente 3ashmtene w konte aw7sh mn
+el ola w ana 3omre f hiate m hasam7k da ana klmt babaia alashank w ana asln maleesh m3aza 3ndk 
 
 With Love ❤️
 
