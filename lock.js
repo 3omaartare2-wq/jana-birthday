@@ -23,6 +23,9 @@ Enharda sa7 your special day...
 
 Bas ente btkhale kol youm fe hiate special bwgodk feeh ❤️
 
+ah w haga kman ana klmt babaia alashan w olteloh ene b7bk w 3awzk w hwa wafe2 ene akhtobk f el emtyaz 
+alashan ente konte 2al2ana bs faaaaaa mate2la2eesh 
+
 ta3deel : wl website da ana 3amloh mn abl m t2olele ennek msh hainfa3 tekalmene tane khals bs ana kan lazm ab3atoh 
 
 With Love ❤️
