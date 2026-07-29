@@ -2,7 +2,7 @@
    LOCK SCREEN
 =========================== */
 
-const unlockDate = new Date("2026-08-01T00:00:00");
+const unlockDate = new Date("2026-07-29T00:00:00");
 
 const lockScreen = document.getElementById("lockScreen");
 const websiteContent = document.getElementById("websiteContent");
