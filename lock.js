@@ -26,7 +26,7 @@ Bas ente btkhale kol youm fe hiate special bwgodk feeh ❤️
 ah w haga kman ana klmt babaia alashan w olteloh ene b7bk w 3awzk w hwa wafe2 ene akhtobk f el emtyaz 
 alashan ente konte 2al2ana bs faaaaaa mate2la2eesh 
 
-ta3deel : rabna ysam7k y jana w ykhalene asam7k 
+ta3deel : mkansh nfse el mawdo3 ywsal l kda bs el7amdullah 
 
 With Love ❤️
 
