@@ -1,4 +1,59 @@
 /* ===========================
+   PASSWORD SCREEN
+=========================== */
+
+const passwordScreen = document.getElementById("passwordScreen");
+const passwordInput = document.getElementById("passwordInput");
+const passwordBtn = document.getElementById("passwordBtn");
+const passwordMessage = document.getElementById("passwordMessage");
+
+const correctPassword = "b7bk y moro";
+
+function checkPassword() {
+
+    const enteredPassword = passwordInput.value.trim().toLowerCase();
+
+    if (enteredPassword === correctPassword) {
+
+        passwordMessage.innerHTML = "❤️ Welcome...";
+
+        passwordScreen.style.opacity = "0";
+
+        setTimeout(() => {
+            passwordScreen.style.display = "none";
+        }, 700);
+
+    } else {
+
+        passwordMessage.innerHTML = "😏 Nope... try again.";
+
+        passwordInput.value = "";
+
+        passwordInput.animate([
+            { transform: "translateX(0)" },
+            { transform: "translateX(-8px)" },
+            { transform: "translateX(8px)" },
+            { transform: "translateX(0)" }
+        ], {
+            duration: 300
+        });
+
+    }
+
+}
+
+passwordBtn.addEventListener("click", checkPassword);
+
+passwordInput.addEventListener("keydown", (event) => {
+
+    if (event.key === "Enter") {
+        checkPassword();
+    }
+
+});
+
+
+/* ===========================
    LOCK SCREEN
 =========================== */
 
@@ -12,37 +67,37 @@ const lockMessage = document.getElementById("lockMessage");
 
 const funnyMessages = [
 
-"😂 Nice try... not today.",
+    "😂 Nice try... not today.",
 
-"🙈 No peeking!",
+    "🙈 No peeking!",
 
-"🎁 The gift is still wrapping itself.",
+    "🎁 The gift is still wrapping itself.",
 
-"❤️ Patience makes surprises sweeter.",
+    "❤️ Patience makes surprises sweeter.",
 
-"😏 You thought it would be that easy?",
+    "😏 You thought it would be that easy?",
 
-"🎂 Almost... but not yet.",
+    "🎂 Almost... but not yet.",
 
-"💌 Come back on the special day.",
+    "💌 Come back on the special day.",
 
-"✨ Magic takes time.",
+    "✨ Magic takes time.",
 
-"🥹 I know you're curious.",
+    "🥹 I know you're curious.",
 
-"🔒 Still locked..."
+    "🔒 Still locked..."
 
 ];
 
 let clicks = 0;
 
-function updateCountdown(){
+function updateCountdown() {
 
     const now = new Date();
 
     const diff = unlockDate - now;
 
-    if(diff <= 0){
+    if (diff <= 0) {
 
         lockScreen.style.display = "none";
         websiteContent.style.display = "block";
@@ -51,87 +106,106 @@ function updateCountdown(){
 
     }
 
-    const days = Math.floor(diff / (1000*60*60*24));
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
-    const hours = Math.floor(diff / (1000*60*60)) % 24;
+    const hours =
+        Math.floor(diff / (1000 * 60 * 60)) % 24;
 
-    const minutes = Math.floor(diff / (1000*60)) % 60;
+    const minutes =
+        Math.floor(diff / (1000 * 60)) % 60;
 
-    const seconds = Math.floor(diff / 1000) % 60;
+    const seconds =
+        Math.floor(diff / 1000) % 60;
 
-    countdown.innerHTML = `(${days}d ${hours}h ${minutes}m ${seconds}s)`;
+    countdown.innerHTML =
+        ${days}d ${hours}h ${minutes}m ${seconds}s;
 
 }
 
 updateCountdown();
 
-setInterval(updateCountdown,1000);
+setInterval(updateCountdown, 1000);
 
-lockBtn.addEventListener("click",()=>{
+
+lockBtn.addEventListener("click", () => {
 
     clicks++;
 
     lockBtn.animate([
 
-        {transform:"scale(1)"},
+        { transform: "scale(1)" },
 
-        {transform:"scale(.92)"},
+        { transform: "scale(.92)" },
 
-        {transform:"scale(1.05)"},
+        { transform: "scale(1.05)" },
 
-        {transform:"scale(1)"}
+        { transform: "scale(1)" }
 
-    ],{
+    ], {
 
-        duration:300
+        duration: 300
 
     });
 
-    if(clicks===5){
+
+    if (clicks === 5) {
 
         lockMessage.innerHTML =
-        "🤨 You're really curious, aren't you?";
+            "🤨 You're really curious, aren't you?";
 
         return;
 
     }
 
-    if(clicks===10){
+
+    if (clicks === 10) {
 
         lockMessage.innerHTML =
-        "😂 Okay okay... stop pressing me!";
+            "😂 Okay okay... stop pressing me!";
 
         return;
 
     }
 
-    if(clicks===20){
+
+    if (clicks === 20) {
 
         lockMessage.innerHTML =
-        "❤️ I promise it'll be worth the wait.";
+            "❤️ I promise it'll be worth the wait.";
 
         return;
 
     }
+
 
     const random =
-    funnyMessages[
-        Math.floor(Math.random()*funnyMessages.length)
-    ];
+        funnyMessages[
+            Math.floor(Math.random() * funnyMessages.length)
+        ];
 
     lockMessage.innerHTML = random;
 
 });
 
+
+/* ===========================
+   OPEN SURPRISE
+=========================== */
+
 const openBtn = document.getElementById("openBtn");
 
 const fade = () => {
+
     document.body.style.transition = "opacity .9s";
+
     document.body.style.opacity = "0";
 
     setTimeout(() => {
+
         window.location.href = "jana.html";
+
     }, 900);
+
 };
 
 openBtn.addEventListener("click", fade);
