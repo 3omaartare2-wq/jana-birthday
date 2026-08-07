@@ -870,4 +870,114 @@ transform:translateY(0);
     font-size: 17px;
 
 }
+
+/* ===========================
+   DESKTOP BLOCK
+=========================== */
+
+#desktopMessage {
+    display: none;
+}
+
+
+/* ===========================
+   DESKTOP / LAPTOP
+=========================== */
+
+@media (min-width: 769px) {
+
+    #desktopMessage {
+
+        position: fixed;
+
+        inset: 0;
+
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        background:
+            radial-gradient(
+                circle at top,
+                rgba(130, 0, 30, 0.45),
+                transparent 45%
+            ),
+            #080808;
+
+        z-index: 99999;
+
+        padding: 30px;
+
+        box-sizing: border-box;
+
+    }
+
+
+    .desktopBox {
+
+        width: 90%;
+        max-width: 550px;
+
+        padding: 55px 40px;
+
+        text-align: center;
+
+        background: rgba(255,255,255,0.045);
+
+        border: 1px solid rgba(255,255,255,0.12);
+
+        border-radius: 30px;
+
+        backdrop-filter: blur(15px);
+
+        box-shadow:
+            0 0 50px rgba(120,0,30,0.3);
+
+    }
+
+
+    .desktopIcon {
+
+        font-size: 75px;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .desktopBox h1 {
+
+        color: white;
+
+        font-size: 48px;
+
+        margin: 0 0 20px;
+
+    }
+
+
+    .desktopBox p {
+
+        color: rgba(255,255,255,0.85);
+
+        font-size: 22px;
+
+        margin: 0 0 12px;
+
+    }
+
+
+    .desktopBox span {
+
+        color: #ff6b87;
+
+        font-size: 18px;
+
+    }
+
+}
 }
