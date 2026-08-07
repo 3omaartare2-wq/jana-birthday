@@ -872,11 +872,83 @@ transform:translateY(0);
 }
 
 /* ===========================
-   DESKTOP BLOCK
+   DESKTOP ONLY PROTECTION
 =========================== */
 
 #desktopMessage {
-    display: none;
+    display: none !important;
+}
+
+@media screen and (min-width: 769px) {
+
+    #desktopMessage {
+        position: fixed !important;
+        inset: 0 !important;
+
+        width: 100vw !important;
+        height: 100vh !important;
+
+        display: flex !important;
+
+        justify-content: center !important;
+        align-items: center !important;
+
+        background:
+            radial-gradient(
+                circle at top,
+                rgba(130, 0, 30, 0.45),
+                transparent 45%
+            ),
+            #080808 !important;
+
+        z-index: 999999 !important;
+
+        box-sizing: border-box !important;
+        padding: 30px !important;
+    }
+
+    .desktopBox {
+        width: 90% !important;
+        max-width: 550px !important;
+
+        padding: 55px 40px !important;
+
+        text-align: center !important;
+
+        background: rgba(255,255,255,0.045) !important;
+
+        border: 1px solid rgba(255,255,255,0.12) !important;
+
+        border-radius: 30px !important;
+
+        backdrop-filter: blur(15px);
+
+        box-shadow:
+            0 0 50px rgba(120,0,30,0.3) !important;
+    }
+
+    .desktopIcon {
+        font-size: 75px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .desktopBox h1 {
+        color: white !important;
+        font-size: 48px !important;
+        margin: 0 0 20px !important;
+    }
+
+    .desktopBox p {
+        color: rgba(255,255,255,0.85) !important;
+        font-size: 22px !important;
+        margin: 0 0 12px !important;
+    }
+
+    .desktopBox span {
+        color: #ff6b87 !important;
+        font-size: 18px !important;
+    }
+
 }
 
 

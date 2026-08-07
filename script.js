@@ -1,4 +1,47 @@
 /* ===========================
+   MOBILE ONLY
+=========================== */
+
+function checkDevice() {
+
+    const isMobile =
+        /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|Mobile/i
+        .test(navigator.userAgent);
+
+    const desktopMessage =
+        document.getElementById("desktopMessage");
+
+    const passwordScreen =
+        document.getElementById("passwordScreen");
+
+    const lockScreen =
+        document.getElementById("lockScreen");
+
+    const websiteContent =
+        document.getElementById("websiteContent");
+
+
+    if (!isMobile) {
+
+        desktopMessage.style.display = "flex";
+
+        passwordScreen.style.display = "none";
+        lockScreen.style.display = "none";
+        websiteContent.style.display = "none";
+
+        return false;
+    }
+
+    return true;
+}
+
+if (!checkDevice()) {
+
+    throw new Error("Mobile devices only");
+
+}
+
+/* ===========================
    PASSWORD SCREEN
 =========================== */
 
